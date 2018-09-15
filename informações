@@ -1,0 +1,24 @@
+Configurações
+
+- ESLINT: ./node_modules/./bin/eslint --init
+          -> Use a popular style guide
+          -> Standard
+          -> JSON
+
+- Instalação do pacote restify cors middleware:
+  npm i --save-dev restify-cors-midleware
+ 
+- Instalação da biblioteca de mysql:
+  npm install mysql --save-dev
+
+- Dotenvjs: npm i dotenv --save-dev
+
+- AVAJS - ferramenta para testes javascript:
+  npm install --global ava 
+  ava --int (Dentro da raiz do projeto) 
+
+- SHA1 - módulo para criptografia da senha:
+  npm i --save-dev sha1
+
+- JWT - módulo para geração de webtoken:
+  npm i --save-dev jsonwebtoken  

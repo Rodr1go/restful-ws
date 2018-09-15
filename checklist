@@ -1,0 +1,15 @@
+1. Server Ubuntu com nodeJS, Nginx e MySQL
+2. Acesso SSH
+3. Clonar o repo
+4. Instalar dependências
+5. Criar e atualizar .env
+6. Criação das tabelas no BD
+7. Rodar testes
+8. Rodar com comando nodeJS
+9. Rodar permanentemente com PM2
+   - npm i -g pm2
+   - rodar o comando NODE_ENV=production pm2 start src/index.js --name=RESTFUL
+10. Testar com IP + porta 
+11. Habilitar porta no Firewall
+    - firewall UFW - do ubuntu 
+12. Criar configuração no Nginx e usar subdomínio
