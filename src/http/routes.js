@@ -1,7 +1,7 @@
 const db = require('../services/mysql')
 
 const routes = (server) => {
-  server.post('autenticacao', async (req, res, next) => {
+  server.post('/autenticacao', async (req, res, next) => {
     try {
       const { email, password } = req.params
       res.send(await db.auth().authenticate(email, password))
@@ -11,7 +11,7 @@ const routes = (server) => {
     next()
   })
 
-  server.get('categoria', async (req, res, next) => {
+  server.get('/categoria', async (req, res, next) => {
     try {
       res.send(await db.categorias().all())
     } catch (error) {
@@ -20,7 +20,7 @@ const routes = (server) => {
     next()
   })
 
-  server.post('categoria', async (req, res, next) => {
+  server.post('/categoria', async (req, res, next) => {
     const { name } = req.params
     try {
       res.send(await db.categorias().save(name))
@@ -30,7 +30,7 @@ const routes = (server) => {
     next()
   })
 
-  server.put('categoria', async (req, res, next) => {
+  server.put('/categoria', async (req, res, next) => {
     const { id, name } = req.params
     try {
       res.send(await db.categorias().update(id, name))
@@ -40,7 +40,7 @@ const routes = (server) => {
     next()
   })
 
-  server.del('categoria', async (req, res, next) => {
+  server.del('/categoria', async (req, res, next) => {
     const { id } = req.params
     try {
       res.send(await db.categorias().del(id))
@@ -50,7 +50,7 @@ const routes = (server) => {
     next()
   })
 
-  server.get('produto', async (req, res, next) => {
+  server.get('/produto', async (req, res, next) => {
     try {
       res.send(await db.produtos().all())
     } catch (error) {

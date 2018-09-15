@@ -7,22 +7,28 @@
     "dev": "nodemon src/index.js",
     "test": "ava --verbose"
   },
-  "keywords": [nodejs, restful, webservice],
+  "keywords": [
+    "nodejs",
+    "restful",
+    "webservice"
+  ],
   "author": "Rodrigo Santos",
   "license": "ISC",
-  "devDependencies": {
-    "ava": "^0.24.0",
+  "dependencies": {
     "dotenv": "^4.0.0",
-    "eslint": "^4.14.0",
+    "jsonwebtoken": "^8.1.0",
+    "mysql": "^2.15.0",
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^5.6.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "jsonwebtoken": "^8.1.0",
-    "mysql": "^2.15.0",
-    "restify": "^6.3.4",
-    "restify-cors-middleware": "^1.1.0",
-    "sha1": "^1.1.1"
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
