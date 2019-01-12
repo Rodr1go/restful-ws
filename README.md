@@ -1,5 +1,5 @@
 # restful-ws
-RESTful WebService em NodeJS utilizando Restify e MySQL
+RESTful WebService em NodeJS utilizando Restify como HTTP Router e, banco de dados MySQL
 
 Para testar o projeto:
 ---------------------- 
